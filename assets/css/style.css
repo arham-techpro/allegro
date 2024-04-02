@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?');
+
+/* ==========================================
+CSS Reset
+========================================== */
+
+*,p,ul,ol,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Inter", sans-serif;
+    background: #F6F8F3;
+}
+h1,h2,h3,h4,h5,h6,.heading-font{
+    font-family: "Poppins", sans-serif;
+}
+/* ==============================
+Colors
+============================== */
+:root{
+    --brand-color-a: #8DBF41;
+    --brand-color-b: #FF9900;
+    --brand-color-c: #F6F8F3;
+    --brand-color-d: #1C1F17;
+    --brand-color-para: #4C4C4B;
+    --brand-color-para-2: #6D737A;
+}
+
+.brand-color-a,.hover-brand-color-a:hover,.brand-color-a-active{
+    color: var(--brand-color-a);
+}
+.brand-color-b,.hover-brand-color-b:hover{
+    color: var(--brand-color-b);
+}
+.brand-color-c,.hover-brand-color-c:hover{
+    color: var(--brand-color-c);
+}
+.brand-color-d,.hover-brand-color-d:hover{
+    color: var(--brand-color-d);
+}
+.brand-color-para,.hover-brand-color-para:hover{
+    color: var(--brand-color-para);
+}
+.brand-color-para-2,.hover-brand-color-para-2:hover{
+    color: var(--brand-color-para-2);
+}
+.text-fff,.hover-text-fff:hover{
+    color: #fff;
+}
+.bg-fff{
+    background: #fff;
+}
+.bg-a,.hover-bg-a:hover{
+    background: var(--brand-color-a);
+}
+.bg-b,.hover-bg-b:hover{
+    background: var(--brand-color-b);
+}
+.bg-c,.hover-bg-c:hover{
+    background: var(--brand-color-c);
+}
+.bg-d,.hover-bg-d:hover{
+    background: var(--brand-color-d);
+}
+
+
+/* ==============================
+Resuable Componant
+============================== */
+.full-width{
+    width: 100%;
+}
+.ease-tran{
+    transition: .3s ease;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.button{
+    padding: 12px 24px;
+    border: 0px;
+}
+
+.border-top-both{
+    border-radius: 8px 8px 0px 0px;
+}
+.bt{
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.section-title{
+    font-size: 56px;
+    font-weight: 600;
+}
+.op-6{
+    opacity: .6;
+}
+.op-8{
+    opacity: .8;
+}
+.hover-op-10:hover{
+    opacity: 1;
+}
+/* ==============================
+Specing
+============================== */
+.mt-80{
+    margin-top: 80px;
+}
+.mb-80{
+    margin-bottom: 80px;
+}
+.mt-60{
+    margin-top: 60px;
+}
+.mb-60{
+    margin-bottom: 60px;
+}
+.pb-120{
+    padding-bottom: 120px;
+}
+.section-padding{
+    padding: 120px 0px;
+}
+.py-80{
+    padding: 80px 0px;
+}
+.font-20{
+    font-size: 20px;
+}
+
+/* ==============================
+Header
+============================== */
+.navbar-brand,.nav-right{
+    width: 20%;
+}
+.main-navbar{
+    width: 60%;
+}
+.logo{
+    width: 180px;
+}
+.main-navbar ul li:not(:last-child){
+    padding-right: 30px;
+}
+.main-navbar ul li a::before{
+    content: '';
+    background: var(--brand-color-a);
+    height: 2px;
+    width: 0px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    transform-origin: center;
+    transition: .3s ease;
+}
+.main-navbar ul li a:hover:before,.main-navbar ul li a.nav-active::before{
+    width: 40%;
+}
+/* ==============================
+Bannner Section
+============================== */
+.banner{
+    padding-top: 150px;
+    z-index: 1;
+}
+.banner::before{
+    position: absolute;
+    content: '';
+    background: url('../img/banner-img.jpg') center / cover no-repeat;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    z-index: -1;
+}
+.banner h1{
+    font-size: 72px;
+    
+}
+.search-tab-button.active , .search-tab-button:hover{
+    color: #6E80B4;
+    background: #fff;
+}
+
+.search-input-items:not(:last-child){
+    border-right: 1px solid #CFD3D6;
+    padding-right: 90px;
+}
+.search-input-items select{
+    margin-left: -5px;
+}
+.search-input-items select:focus{
+    outline: 0;
+    border: 0;
+}
+.search-result-container {
+    padding: 80px 40px 44px;
+    box-shadow: inset 0px 4px 40px 0px rgba(0, 0, 0, 0.06);
+}
+
+/* ==============================
+Latest Property Slider Section
+============================== */
+.property-box-des{
+    z-index: 1;
+    bottom: -50%;
+}
+.property-box:hover .property-box-des{
+    bottom: 0px;
+}
+
+.latest-property-section{
+    padding-bottom: 570px;
+}
+.slick-slide:not(:last-child){
+    margin-right: 20px;
+}
+
+
+/* ==============================
+Featured Property Section
+============================== */
+.featured-button{
+    padding: 12px 24px;
+    font-weight: 500;
+    background: transparent;
+}
+.featured-button.active{
+    background: var(--brand-color-a);
+    color: var(--brand-color-c);
+}
+.featured-box{
+    margin-bottom: 30px;
+}
+.featured-box:hover{
+    transform: translateY(-15px);
+}
+/* ==============================
+Testimonial Section
+============================== */
+.tesimonial-section .slick-prev,
+.tesimonial-section .slick-next{
+    top: -118px;
+    left: unset;
+    right: 60px
+}
+.tesimonial-section .slick-next{
+    left: unset;
+    right: 0px;
+}
+
+
+/* ==============================
+Contactus Section
+============================== */
+.contact-section{
+    background: linear-gradient(90deg,#F6F8F3 50%,#8DBF41 50%);
+}
+
+.contatus-form .card{
+    box-shadow: 0px 16px 40px 0px rgba(43, 56, 88, 0.08);
+}
+
+/* ==============================
+BLog Section
+============================== */
+.blog-box{
+    border-bottom: 1px solid transparent;
+}
+.blog-box:hover{
+    transform: translateY(-15px);
+    border-color: #57575738;
+}
+.joinus-section::before{
+    background: #fff;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    width: 100%;
+    height: 100%;
+}
+.joinus-container h3{
+    font-size: 44px;
+}
+
+
+
+/* ==============================
+Footer Section
+============================== */
+.footer{
+    padding-top: 180px;
+    margin-top: -100px;
+}
+

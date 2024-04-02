@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/fav-icon.png" type="image/x-icon">
+    <title>Allegro - Real Estate Project</title>
+
+    <script src="https://kit.fontawesome.com/5c1a266e25.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/lib/slick/slick/slick-theme.css">
+    <link rel="stylesheet" href="./assets/lib/slick/slick/slick.css">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+
+</head>
+
+<body>
+
+    <!-- ============================
+    Header Section
+    ============================ -->
+    <header class="bg-white py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand me-0" href="index.html">
+                    <img src="./assets/img/logo.png" alt="Allegro" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse main-navbar" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center full-width">
+                        <li class="nav-item"><a class="nav-link brand-color-a-active hover-brand-color-a fw-semibold ease-tran p-0 position-relative nav-active" aria-current="page" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link hover-brand-color-a ease-tran p-0 position-relative" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link hover-brand-color-a ease-tran p-0 position-relative" href="#">Property</a></li>
+                        <li class="nav-item"><a class="nav-link hover-brand-color-a ease-tran p-0 position-relative" href="#">Property owner</a></li>
+                        <li class="nav-item"><a class="nav-link hover-brand-color-a ease-tran p-0 position-relative" href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right text-end">
+                    <a href="#" class="button border bg-a brand-color-c hover-bg-b hover-brand-color-c rounded-2 ease-tran">Sign In</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============================
+    Banner Section
+    ============================ -->
+    <section class="banner position-relative d-flex justify-content-center">
+        <div class="container">
+            <div class="banner-content text-center">
+                <h1 class="text-white mb-4 fw-bold">Find Your Luxury House By Us</h1>
+                <p class="text-white text-opacity-75 fs-5">The key to your new home is just a click away. Browse our listings, schedule a consultation, and let's embark <br> on this exciting journey together. Welcome to a world of extraordinary living with us.</p>
+            </div>
+
+            <div class="banner-search-tab mt-80">
+                <div class="text-center">
+
+                    <nav class="d-inline-flex overflow-hidden border-top-both">
+                        <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+                            <button class="search-tab-button ease-tran border-0 button text-fff fw-semibold bg-b active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-Rent" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Rent</button>
+                            <button class="search-tab-button ease-tran border-0 button text-fff fw-semibold bg-b" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-Sale" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Sale</button>
+                        </div>
+                    </nav>
+                </div>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-Rent" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-10 mx-auto">
+                                <div class="search-form border-top-both bg-white p-4">
+                                    <div class="d-flex justify-content-around align-items-center">
+                                        <div class="search-input-items">
+                                            <label for="Locations" class="brand-color-d fw-semibold mb-2 d-block">Locations</label>
+                                            <select name="" id="Locations" class="border-0">
+                                                <option value="">Select your city</option>
+                                                <option value="">Alexander City</option>
+                                                <option value="">Andalusia</option>
+                                                <option value="">Anniston</option>
+                                                <option value="">Athens</option>
+                                                <option value="">Atmore</option>
+                                            </select>
+                                        </div>
+                                        <div class="search-input-items">
+                                            <label for="Property_Type" class="brand-color-d fw-semibold mb-2 d-block">Property Type</label>
+                                            <select name="" id="Property_Type" class="border-0">
+                                                <option value="">Select your city</option>
+                                                <option value="">Alexander City</option>
+                                                <option value="">Andalusia</option>
+                                                <option value="">Anniston</option>
+                                                <option value="">Athens</option>
+                                                <option value="">Atmore</option>
+                                            </select>
+                                        </div>
+                                        <div class="search-input-items">
+                                            <label for="Rent_Range" class="brand-color-d fw-semibold mb-2 d-block">Rent Range</label>
+                                            <select name="" id="Rent_Range" class="border-0">
+                                                <option value="">Select your city</option>
+                                                <option value="">Alexander City</option>
+                                                <option value="">Andalusia</option>
+                                                <option value="">Anniston</option>
+                                                <option value="">Athens</option>
+                                                <option value="">Atmore</option>
+                                            </select>
+                                        </div>
+                                        <div class="search-input-items">
+                                            <button class="button bg-a hover-bg-b ease-tran brand-color-c border-0 rounded-1">Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="search-result-container border-top-both bg-white">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="mx-2 box text-center py-5 px-3 bg-white rounded-1 border">
+                                                <img src="./assets/img/icon/appartment.png" class="mb-4" alt="Apartment">
+                                                <h5 class="brand-color-d fw-bold fs-2 mb-1">Apartment</h5>
+                                                <span class="brand-color-para">100+ Listings</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="mx-2 box text-center py-5 px-3 bg-white rounded-1 border">
+                                                <img src="./assets/img/icon/condominium.png" class="mb-4" alt=" Condominium">
+                                                <h5 class="brand-color-d fw-bold fs-2 mb-1"> Condominium</h5>
+                                                <span class="brand-color-para">120+ Listings</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="mx-2 box text-center py-5 px-3 bg-white rounded-1 border">
+                                                <img src="./assets/img/icon/house.png" class="mb-4" alt="House">
+                                                <h5 class="brand-color-d fw-bold fs-2 mb-1">House</h5>
+                                                <span class="brand-color-para">150+ Listings</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="mx-2 box text-center py-5 px-3 bg-white rounded-1 border">
+                                                <img src="./assets/img/icon/office.png" class="mb-4" alt="Office">
+                                                <h5 class="brand-color-d fw-bold fs-2 mb-1">Office</h5>
+                                                <span class="brand-color-para">60+ Listings</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-Sale" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-10 mx-auto">
+                                <div class="search-form border-top-both bg-white p-4">
+                                    <div class="d-flex justify-content-around align-items-center">
+                                        <div class="search-input-items">
+                                            <label for="Locations" class="brand-color-d fw-semibold mb-2 d-block">Locations</label>
+                                            <select name="" id="Locations" class="border-0">
+                                                <option value="">Select your city</option>
+                                                <option value="">Alexander City</option>
+                                                <option value="">Andalusia</option>
+                                                <option value="">Anniston</option>
+                                                <option value="">Athens</option>
+                                                <option value="">Atmore</option>
+                                            </select>
+                                        </div>
+                                        <div class="search-input-items">
+                                            <label for="Property_Type" class="brand-color-d fw-semibold mb-2 d-block">Property Type</label>
+                                            <select name="" id="Property_Type" class="border-0">
+                                                <option value="">Select your city</option>
+                                                <option value="">Alexander City</option>
+                                                <option value="">Andalusia</option>
+                                                <option value="">Anniston</option>
+                                                <option value="">Athens</option>
+                                                <option value="">Atmore</option>
+                                            </select>
+                                        </div>
+                                        <div class="search-input-items">
+                                            <label for="Rent_Range" class="brand-color-d fw-semibold mb-2 d-block">Rent Range</label>
+                                            <select name="" id="Rent_Range" class="border-0">
+                                                <option value="">Select your city</option>
+                                                <option value="">Alexander City</option>
+                                                <option value="">Andalusia</option>
+                                                <option value="">Anniston</option>
+                                                <option value="">Athens</option>
+                                                <option value="">Atmore</option>
+                                            </select>
+                                        </div>
+                                        <div class="search-input-items">
+                                            <button class="button bg-a hover-bg-b ease-tran brand-color-c border-0 rounded-1">Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="search-result-container border-top-both bg-white">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="mx-2 box text-center py-5 px-3 bg-white rounded-1 border">
+                                                <img src="./assets/img/icon/appartment.png" class="mb-4" alt="Apartment">
+                                                <h5 class="brand-color-d fw-bold fs-2 mb-1">Apartment</h5>
+                                                <span class="brand-color-para">100+ Listings</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="mx-2 box text-center py-5 px-3 bg-white rounded-1 border">
+                                                <img src="./assets/img/icon/condominium.png" class="mb-4" alt=" Condominium">
+                                                <h5 class="brand-color-d fw-bold fs-2 mb-1"> Condominium</h5>
+                                                <span class="brand-color-para">120+ Listings</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="mx-2 box text-center py-5 px-3 bg-white rounded-1 border">
+                                                <img src="./assets/img/icon/house.png" class="mb-4" alt="House">
+                                                <h5 class="brand-color-d fw-bold fs-2 mb-1">House</h5>
+                                                <span class="brand-color-para">150+ Listings</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="mx-2 box text-center py-5 px-3 bg-white rounded-1 border">
+                                                <img src="./assets/img/icon/office.png" class="mb-4" alt="Office">
+                                                <h5 class="brand-color-d fw-bold fs-2 mb-1">Office</h5>
+                                                <span class="brand-color-para">60+ Listings</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ============================
+    Laset Property Slider Section
+    ============================ -->
+    <section class="section-padding overflow-hidden latest-property-section position-relative">
+        <div class="container">
+            <div class="section-header mb-80">
+                <h3 class="section-title mb-1">Latest Properties for Sale</h3>
+                <p>We provide equity and debt capital globally to back <br> projects that make an impact.</p>
+            </div>
+            <div class="latest-property-slider-warp position-absolute full-width">
+                <div class="latest-property-slider">
+                    <div class="box property-box rounded-2 overflow-hidden cursor-pointer position-relative">
+                        <img src="./assets/img/property-img/latest-1.jpg" class="full-width rounded-2 ease-tran" alt="Latest Property Image">
+                        <div class="property-box-des bg-white p-4 position-absolute start-0 full-width ease-tran">
+                            <h5 class="fw-semibold mb-1">Jaimtone's Crossing</h5>
+                            <span>North Carolina, USA</span>
+                        </div>
+                    </div>
+                    <div class="box property-box rounded-2 overflow-hidden cursor-pointer position-relative">
+                        <img src="./assets/img/property-img/latest-2.jpg" class="full-width rounded-2 ease-tran" alt="Latest Property Image">
+                        <div class="property-box-des bg-white p-4 position-absolute start-0 full-width ease-tran">
+                            <h5 class="fw-semibold mb-1">Jaimtone's Crossing</h5>
+                            <span>North Carolina, USA</span>
+                        </div>
+                    </div>
+                    <div class="box property-box rounded-2 overflow-hidden cursor-pointer position-relative">
+                        <img src="./assets/img/property-img/latest-3.jpg" class="full-width rounded-2 ease-tran" alt="Latest Property Image">
+                        <div class="property-box-des bg-white p-4 position-absolute start-0 full-width ease-tran">
+                            <h5 class="fw-semibold mb-1">Jaimtone's Crossing</h5>
+                            <span>North Carolina, USA</span>
+                        </div>
+                    </div>
+                    <div class="box property-box rounded-2 overflow-hidden cursor-pointer position-relative">
+                        <img src="./assets/img/property-img/latest-4.jpg" class="full-width rounded-2 ease-tran" alt="Latest Property Image">
+                        <div class="property-box-des bg-white p-4 position-absolute start-0 full-width ease-tran">
+                            <h5 class="fw-semibold mb-1">Jaimtone's Crossing</h5>
+                            <span>North Carolina, USA</span>
+                        </div>
+                    </div>
+    
+    
+                    <div class="box property-box rounded-2 overflow-hidden cursor-pointer position-relative">
+                        <img src="./assets/img/property-img/latest-2.jpg" class="full-width rounded-2 ease-tran" alt="Latest Property Image">
+                        <div class="property-box-des bg-white p-4 position-absolute start-0 full-width ease-tran">
+                            <h5 class="fw-semibold mb-1">Jaimtone's Crossing</h5>
+                            <span>North Carolina, USA</span>
+                        </div>
+                    </div>
+                    <div class="box property-box rounded-2 overflow-hidden cursor-pointer position-relative">
+                        <img src="./assets/img/property-img/latest-3.jpg" class="full-width rounded-2 ease-tran" alt="Latest Property Image">
+                        <div class="property-box-des bg-white p-4 position-absolute start-0 full-width ease-tran">
+                            <h5 class="fw-semibold mb-1">Jaimtone's Crossing</h5>
+                            <span>North Carolina, USA</span>
+                        </div>
+                    </div>
+                    <div class="box property-box rounded-2 overflow-hidden cursor-pointer position-relative">
+                        <img src="./assets/img/property-img/latest-4.jpg" class="full-width rounded-2 ease-tran" alt="Latest Property Image">
+                        <div class="property-box-des bg-white p-4 position-absolute start-0 full-width ease-tran">
+                            <h5 class="fw-semibold mb-1">Jaimtone's Crossing</h5>
+                            <span>North Carolina, USA</span>
+                        </div>
+                    </div>
+    
+    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================
+    Start Build offer Section
+    ============================ -->
+    <section class="section-padding pt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="pe-4">
+                        <img src="./assets/img/offer-image.png" class="full-width" alt="Offer Image">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ps-4">
+                        <div class="section-header mb-80">
+                            <h3 class="section-title mb-1">Dream Living Spaces Setting New Build</h3>
+                            <p>Sell, or rent with us. Committed to understanding your needs, we <br> provide personalized solutions exceeding expectations.</p>
+                        </div>
+                        <ul class="mt-80">
+                            <li class="d-flex mb-5 align-items-start brand-color-para">
+                                <img src="./assets/img/icon/home.png" class="me-4" alt="Home Icon">
+                                <span>Discover 'The Perfect Residency'—where <br> dream homes become a beautiful reality <br> of living excellence.</span>
+                            </li>
+                            <li class="d-flex mb-5 align-items-start brand-color-para">
+                                <img src="./assets/img/icon/group.png" class="me-4" alt="Group Icon">
+                                <span>Our curated selection of exquisite <br> residences caters to every taste. <br> Experience unparalleled.</span>
+                            </li>
+                            <li class="d-flex align-items-start brand-color-para">
+                                <img src="./assets/img/icon/map.png" class="me-4" alt="Group Icon">
+                                <span>Optimize space with our built-in storage <br> cupboards for a clutter-free and organized  <br>living environment.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================
+    Featured Property Section
+    ============================ -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-12">
+                    <div class="section-header text-center mb-80">
+                        <h3 class="section-title mb-1">Featured Properties</h3>
+                        <p>Explore our curated selection of featured properties—a showcase of exceptional <br> homes that embody style, luxury, and unparalleled living.</p>
+                    </div>
+
+
+                    <div class="featured-property-tab-buttons text-center mb-60">
+                        <ul class="nav nav-pills rounded-2 border d-inline-flex overflow-hidden" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="featured-button border-0 rounded-0 active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">All</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="featured-button border-0 rounded-0" id="pills-apartments-tab" data-bs-toggle="pill" data-bs-target="#pills-apartments" type="button" role="tab" aria-controls="pills-apartments" aria-selected="false">Apartments</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="featured-button border-0 rounded-0" id="pills-bungalow-tab" data-bs-toggle="pill" data-bs-target="#pills-bungalow" type="button" role="tab" aria-controls="pills-bungalow" aria-selected="false">Bungalow</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="featured-button border-0 rounded-0" id="pills-house-tab" data-bs-toggle="pill" data-bs-target="#pills-house" type="button" role="tab" aria-controls="pills-house" aria-selected="false">House</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="featured-button border-0 rounded-0" id="pills-office-tab" data-bs-toggle="pill" data-bs-target="#pills-office" type="button" role="tab" aria-controls="pills-office" aria-selected="false">Office</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="featured-button border-0 rounded-0" id="pills-smart_home-tab" data-bs-toggle="pill" data-bs-target="#pills-smart_home" type="button" role="tab" aria-controls="pills-smart_home" aria-selected="false">Smart Home</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="featured-button border-0 rounded-0" id="pills-condominium-tab" data-bs-toggle="pill" data-bs-target="#pills-condominium" type="button" role="tab" aria-controls="pills-condominium" aria-selected="false">Condominium</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="features-property-tab-content">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
+                                <div class="row">
+
+                                    <div class="col-lg-4">
+                                        <div class="box featured-box bg-white rounded-2 overflow-hidden position-relative cursor-pointer ease-tran">
+                                            <span class="feature-bagde bg-b py-2 px-4 text-fff fw-semibold position-absolute top-0 end-0">Rent</span>
+                                            <img src="./assets/img/property-img/featured-1.jpg" alt="Featured Image" class="full-width">
+
+                                            <div class="featured-box-content p-4">
+                                                <h5 class="text-uppercase mb-2">10921 SHALLOW CREEK DRIVE</h5>
+                                                <p class="brand-color-b mb-2 fw-semibold fs-5">$ 42,590</p>
+                                                <ul class="d-flex brand-color-para-2 gap-4 fw-semibold align-items-center border-bottom pb-3">
+                                                    <li><img src="./assets/img/icon/hospital-bed.svg" alt="Featured Icon" class="me-1"> 6</li>
+                                                    <li><img src="./assets/img/icon/bathtub.svg" alt="Featured Icon" class="me-1"> <span class="op-6">6</span></li>
+                                                    <li><img src="./assets/img/icon/arrow-out.svg" alt="Featured Icon" class="me-1"> 6,480 sqft</li>
+                                                </ul>
+
+                                                <div class="d-flex justify-content-between pt-4 align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/owners/1.jpg" alt="Owner Image" class="rounded-circle me-3">
+                                                        <p class="fw-semibold fs-5">Jenny Wilson</p>
+                                                    </div>
+                                                    <ul class="d-flex gap-3"> 
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-share-nodes"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-heart fw-normal"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-plus fw-normal"></i></a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="box featured-box bg-white rounded-2 overflow-hidden position-relative cursor-pointer ease-tran">
+                                            <span class="feature-bagde bg-b py-2 px-4 text-fff fw-semibold position-absolute top-0 end-0">Sale</span>
+                                            <img src="./assets/img/property-img/featured-2.jpg" alt="Featured Image" class="full-width">
+
+                                            <div class="featured-box-content p-4">
+                                                <h5 class="text-uppercase mb-2">90 RIVER BIRCH DRIVE</h5>
+                                                <p class="brand-color-b mb-2 fw-semibold fs-5">$2,175,000</p>
+                                                <ul class="d-flex brand-color-para-2 gap-4 fw-semibold align-items-center border-bottom pb-3">
+                                                    <li><img src="./assets/img/icon/hospital-bed.svg" alt="Featured Icon" class="me-1"> 5</li>
+                                                    <li><img src="./assets/img/icon/bathtub.svg" alt="Featured Icon" class="me-1"> <span class="op-6">6</span></li>
+                                                    <li><img src="./assets/img/icon/arrow-out.svg" alt="Featured Icon" class="me-1"> 7,097 sqft</li>
+                                                </ul>
+
+                                                <div class="d-flex justify-content-between pt-4 align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/owners/2.jpg" alt="Owner Image" class="rounded-circle me-3">
+                                                        <p class="fw-semibold fs-5">Henry, Arthur</p>
+                                                    </div>
+                                                    <ul class="d-flex gap-3"> 
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-share-nodes"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-heart fw-normal"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-plus fw-normal"></i></a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="box featured-box bg-white rounded-2 overflow-hidden position-relative cursor-pointer ease-tran">
+                                            <span class="feature-bagde bg-b py-2 px-4 text-fff fw-semibold position-absolute top-0 end-0">Rent</span>
+                                            <img src="./assets/img/property-img/featured-3.jpg" alt="Featured Image" class="full-width">
+
+                                            <div class="featured-box-content p-4">
+                                                <h5 class="text-uppercase mb-2">548 INNSBRUCK AVENUE</h5>
+                                                <p class="brand-color-b mb-2 fw-semibold fs-5">$3,500,000</p>
+                                                <ul class="d-flex brand-color-para-2 gap-4 fw-semibold align-items-center border-bottom pb-3">
+                                                    <li><img src="./assets/img/icon/hospital-bed.svg" alt="Featured Icon" class="me-1"> 5</li>
+                                                    <li><img src="./assets/img/icon/bathtub.svg" alt="Featured Icon" class="me-1"> <span class="op-6">6</span></li>
+                                                    <li><img src="./assets/img/icon/arrow-out.svg" alt="Featured Icon" class="me-1">6,669 sqft</li>
+                                                </ul>
+
+                                                <div class="d-flex justify-content-between pt-4 align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/owners/3.jpg" alt="Owner Image" class="rounded-circle me-3">
+                                                        <p class="fw-semibold fs-5">Flores, Juanita</p>
+                                                    </div>
+                                                    <ul class="d-flex gap-3"> 
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-share-nodes"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-heart fw-normal"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-plus fw-normal"></i></a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="box featured-box bg-white rounded-2 overflow-hidden position-relative cursor-pointer ease-tran">
+                                            <span class="feature-bagde bg-b py-2 px-4 text-fff fw-semibold position-absolute top-0 end-0">Sale</span>
+                                            <img src="./assets/img/property-img/featured-4.jpg" alt="Featured Image" class="full-width">
+
+                                            <div class="featured-box-content p-4">
+                                                <h5 class="text-uppercase mb-2">1208 RILEY PRESERVE COURT</h5>
+                                                <p class="brand-color-b mb-2 fw-semibold fs-5">$3,783,697</p>
+                                                <ul class="d-flex brand-color-para-2 gap-4 fw-semibold align-items-center border-bottom pb-3">
+                                                    <li><img src="./assets/img/icon/hospital-bed.svg" alt="Featured Icon" class="me-1"> 6</li>
+                                                    <li><img src="./assets/img/icon/bathtub.svg" alt="Featured Icon" class="me-1"> <span class="op-6">8</span></li>
+                                                    <li><img src="./assets/img/icon/arrow-out.svg" alt="Featured Icon" class="me-1"> 7,096 sqft</li>
+                                                </ul>
+
+                                                <div class="d-flex justify-content-between pt-4 align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/owners/4.jpg" alt="Owner Image" class="rounded-circle me-3">
+                                                        <p class="fw-semibold fs-5">Flores, Juanita</p>
+                                                    </div>
+                                                    <ul class="d-flex gap-3"> 
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-share-nodes"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-heart fw-normal"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-plus fw-normal"></i></a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="box featured-box bg-white rounded-2 overflow-hidden position-relative cursor-pointer ease-tran">
+                                            <span class="feature-bagde bg-b py-2 px-4 text-fff fw-semibold position-absolute top-0 end-0">Rent</span>
+                                            <img src="./assets/img/property-img/featured-5.jpg" alt="Featured Image" class="full-width">
+
+                                            <div class="featured-box-content p-4">
+                                                <h5 class="text-uppercase mb-2">10509 BEACH MILL ROAD</h5>
+                                                <p class="brand-color-b mb-2 fw-semibold fs-5">$7,750,000</p>
+                                                <ul class="d-flex brand-color-para-2 gap-4 fw-semibold align-items-center border-bottom pb-3">
+                                                    <li><img src="./assets/img/icon/hospital-bed.svg" alt="Featured Icon" class="me-1"> 6\4</li>
+                                                    <li><img src="./assets/img/icon/bathtub.svg" alt="Featured Icon" class="me-1"> <span class="op-6">5</span></li>
+                                                    <li><img src="./assets/img/icon/arrow-out.svg" alt="Featured Icon" class="me-1"> 4,600 sqft</li>
+                                                </ul>
+
+                                                <div class="d-flex justify-content-between pt-4 align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/owners/2.jpg" alt="Owner Image" class="rounded-circle me-3">
+                                                        <p class="fw-semibold fs-5">Henry, Arthur</p>
+                                                    </div>
+                                                    <ul class="d-flex gap-3"> 
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-share-nodes"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-heart fw-normal"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-plus fw-normal"></i></a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="box featured-box bg-white rounded-2 overflow-hidden position-relative cursor-pointer ease-tran">
+                                            <span class="feature-bagde bg-b py-2 px-4 text-fff fw-semibold position-absolute top-0 end-0">Sale</span>
+                                            <img src="./assets/img/property-img/featured-6.jpg" alt="Featured Image" class="full-width">
+
+                                            <div class="featured-box-content p-4">
+                                                <h5 class="text-uppercase mb-2">800 LEIGH MILL ROAD</h5>
+                                                <p class="brand-color-b mb-2 fw-semibold fs-5">$2,550,000</p>
+                                                <ul class="d-flex brand-color-para-2 gap-4 fw-semibold align-items-center border-bottom pb-3">
+                                                    <li><img src="./assets/img/icon/hospital-bed.svg" alt="Featured Icon" class="me-1"> 6</li>
+                                                    <li><img src="./assets/img/icon/bathtub.svg" alt="Featured Icon" class="me-1"> <span class="op-6">6</span></li>
+                                                    <li><img src="./assets/img/icon/arrow-out.svg" alt="Featured Icon" class="me-1"> 5,296 sqft</li>
+                                                </ul>
+
+                                                <div class="d-flex justify-content-between pt-4 align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/owners/5.jpg" alt="Owner Image" class="rounded-circle me-3">
+                                                        <p class="fw-semibold fs-5">Black, Marvin</p>
+                                                    </div>
+                                                    <ul class="d-flex gap-3"> 
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-share-nodes"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-heart fw-normal"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-plus fw-normal"></i></a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-apartments" role="tabpanel" aria-labelledby="pills-apartments-tab" tabindex="0">
+                                <div class="row">
+
+                                    <div class="col-lg-4">
+                                        <div class="box featured-box bg-white rounded-2 overflow-hidden position-relative cursor-pointer ease-tran">
+                                            <span class="feature-bagde bg-b py-2 px-4 text-fff fw-semibold position-absolute top-0 end-0">Rent</span>
+                                            <img src="./assets/img/property-img/featured-1.jpg" alt="Featured Image" class="full-width">
+    
+                                            <div class="featured-box-content p-4">
+                                                <h5 class="text-uppercase mb-2">10921 SHALLOW CREEK DRIVE</h5>
+                                                <p class="brand-color-b mb-2 fw-semibold fs-5">$ 42,590</p>
+                                                <ul class="d-flex brand-color-para-2 gap-4 fw-semibold align-items-center border-bottom pb-3">
+                                                    <li><img src="./assets/img/icon/hospital-bed.svg" alt="Featured Icon" class="me-1"> 6</li>
+                                                    <li><img src="./assets/img/icon/bathtub.svg" alt="Featured Icon" class="me-1"> <span class="op-6">6</span></li>
+                                                    <li><img src="./assets/img/icon/arrow-out.svg" alt="Featured Icon" class="me-1"> 6,480 sqft</li>
+                                                </ul>
+    
+                                                <div class="d-flex justify-content-between pt-4 align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/owners/1.jpg" alt="Owner Image" class="rounded-circle me-3">
+                                                        <p class="fw-semibold fs-5">Jenny Wilson</p>
+                                                    </div>
+                                                    <ul class="d-flex gap-3"> 
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-share-nodes"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-heart fw-normal"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-plus fw-normal"></i></a></li>
+                                                    </ul>
+                                                </div>
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-4">
+                                        <div class="box featured-box bg-white rounded-2 overflow-hidden position-relative cursor-pointer ease-tran">
+                                            <span class="feature-bagde bg-b py-2 px-4 text-fff fw-semibold position-absolute top-0 end-0">Rent</span>
+                                            <img src="./assets/img/property-img/featured-3.jpg" alt="Featured Image" class="full-width">
+    
+                                            <div class="featured-box-content p-4">
+                                                <h5 class="text-uppercase mb-2">548 INNSBRUCK AVENUE</h5>
+                                                <p class="brand-color-b mb-2 fw-semibold fs-5">$3,500,000</p>
+                                                <ul class="d-flex brand-color-para-2 gap-4 fw-semibold align-items-center border-bottom pb-3">
+                                                    <li><img src="./assets/img/icon/hospital-bed.svg" alt="Featured Icon" class="me-1"> 5</li>
+                                                    <li><img src="./assets/img/icon/bathtub.svg" alt="Featured Icon" class="me-1"> <span class="op-6">6</span></li>
+                                                    <li><img src="./assets/img/icon/arrow-out.svg" alt="Featured Icon" class="me-1">6,669 sqft</li>
+                                                </ul>
+    
+                                                <div class="d-flex justify-content-between pt-4 align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/owners/3.jpg" alt="Owner Image" class="rounded-circle me-3">
+                                                        <p class="fw-semibold fs-5">Flores, Juanita</p>
+                                                    </div>
+                                                    <ul class="d-flex gap-3"> 
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-share-nodes"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-heart fw-normal"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-plus fw-normal"></i></a></li>
+                                                    </ul>
+                                                </div>
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-4">
+                                        <div class="box featured-box bg-white rounded-2 overflow-hidden position-relative cursor-pointer ease-tran">
+                                            <span class="feature-bagde bg-b py-2 px-4 text-fff fw-semibold position-absolute top-0 end-0">Sale</span>
+                                            <img src="./assets/img/property-img/featured-4.jpg" alt="Featured Image" class="full-width">
+    
+                                            <div class="featured-box-content p-4">
+                                                <h5 class="text-uppercase mb-2">1208 RILEY PRESERVE COURT</h5>
+                                                <p class="brand-color-b mb-2 fw-semibold fs-5">$3,783,697</p>
+                                                <ul class="d-flex brand-color-para-2 gap-4 fw-semibold align-items-center border-bottom pb-3">
+                                                    <li><img src="./assets/img/icon/hospital-bed.svg" alt="Featured Icon" class="me-1"> 6</li>
+                                                    <li><img src="./assets/img/icon/bathtub.svg" alt="Featured Icon" class="me-1"> <span class="op-6">8</span></li>
+                                                    <li><img src="./assets/img/icon/arrow-out.svg" alt="Featured Icon" class="me-1"> 7,096 sqft</li>
+                                                </ul>
+    
+                                                <div class="d-flex justify-content-between pt-4 align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/owners/4.jpg" alt="Owner Image" class="rounded-circle me-3">
+                                                        <p class="fw-semibold fs-5">Flores, Juanita</p>
+                                                    </div>
+                                                    <ul class="d-flex gap-3"> 
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-share-nodes"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-heart fw-normal"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-plus fw-normal"></i></a></li>
+                                                    </ul>
+                                                </div>
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-bungalow" role="tabpanel" aria-labelledby="pills-bungalow-tab" tabindex="0">
+                                <div class="row justify-content-center">
+
+                                    <div class="col-lg-4">
+                                        <div class="box featured-box bg-white rounded-2 overflow-hidden position-relative cursor-pointer ease-tran">
+                                            <span class="feature-bagde bg-b py-2 px-4 text-fff fw-semibold position-absolute top-0 end-0">Sale</span>
+                                            <img src="./assets/img/property-img/featured-2.jpg" alt="Featured Image" class="full-width">
+
+                                            <div class="featured-box-content p-4">
+                                                <h5 class="text-uppercase mb-2">90 RIVER BIRCH DRIVE</h5>
+                                                <p class="brand-color-b mb-2 fw-semibold fs-5">$2,175,000</p>
+                                                <ul class="d-flex brand-color-para-2 gap-4 fw-semibold align-items-center border-bottom pb-3">
+                                                    <li><img src="./assets/img/icon/hospital-bed.svg" alt="Featured Icon" class="me-1"> 5</li>
+                                                    <li><img src="./assets/img/icon/bathtub.svg" alt="Featured Icon" class="me-1"> <span class="op-6">6</span></li>
+                                                    <li><img src="./assets/img/icon/arrow-out.svg" alt="Featured Icon" class="me-1"> 7,097 sqft</li>
+                                                </ul>
+
+                                                <div class="d-flex justify-content-between pt-4 align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/owners/2.jpg" alt="Owner Image" class="rounded-circle me-3">
+                                                        <p class="fw-semibold fs-5">Henry, Arthur</p>
+                                                    </div>
+                                                    <ul class="d-flex gap-3"> 
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-share-nodes"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-heart fw-normal"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-plus fw-normal"></i></a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="box featured-box bg-white rounded-2 overflow-hidden position-relative cursor-pointer ease-tran">
+                                            <span class="feature-bagde bg-b py-2 px-4 text-fff fw-semibold position-absolute top-0 end-0">Rent</span>
+                                            <img src="./assets/img/property-img/featured-5.jpg" alt="Featured Image" class="full-width">
+
+                                            <div class="featured-box-content p-4">
+                                                <h5 class="text-uppercase mb-2">10509 BEACH MILL ROAD</h5>
+                                                <p class="brand-color-b mb-2 fw-semibold fs-5">$7,750,000</p>
+                                                <ul class="d-flex brand-color-para-2 gap-4 fw-semibold align-items-center border-bottom pb-3">
+                                                    <li><img src="./assets/img/icon/hospital-bed.svg" alt="Featured Icon" class="me-1"> 6\4</li>
+                                                    <li><img src="./assets/img/icon/bathtub.svg" alt="Featured Icon" class="me-1"> <span class="op-6">5</span></li>
+                                                    <li><img src="./assets/img/icon/arrow-out.svg" alt="Featured Icon" class="me-1"> 4,600 sqft</li>
+                                                </ul>
+
+                                                <div class="d-flex justify-content-between pt-4 align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/owners/2.jpg" alt="Owner Image" class="rounded-circle me-3">
+                                                        <p class="fw-semibold fs-5">Henry, Arthur</p>
+                                                    </div>
+                                                    <ul class="d-flex gap-3"> 
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-share-nodes"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-heart fw-normal"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-plus fw-normal"></i></a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-house" role="tabpanel" aria-labelledby="pills-house-tab" tabindex="0">
+                                <div class="row">
+
+                                    <div class="col-lg-4">
+                                        <div class="box featured-box bg-white rounded-2 overflow-hidden position-relative cursor-pointer ease-tran">
+                                            <span class="feature-bagde bg-b py-2 px-4 text-fff fw-semibold position-absolute top-0 end-0">Rent</span>
+                                            <img src="./assets/img/property-img/featured-1.jpg" alt="Featured Image" class="full-width">
+
+                                            <div class="featured-box-content p-4">
+                                                <h5 class="text-uppercase mb-2">10921 SHALLOW CREEK DRIVE</h5>
+                                                <p class="brand-color-b mb-2 fw-semibold fs-5">$ 42,590</p>
+                                                <ul class="d-flex brand-color-para-2 gap-4 fw-semibold align-items-center border-bottom pb-3">
+                                                    <li><img src="./assets/img/icon/hospital-bed.svg" alt="Featured Icon" class="me-1"> 6</li>
+                                                    <li><img src="./assets/img/icon/bathtub.svg" alt="Featured Icon" class="me-1"> <span class="op-6">6</span></li>
+                                                    <li><img src="./assets/img/icon/arrow-out.svg" alt="Featured Icon" class="me-1"> 6,480 sqft</li>
+                                                </ul>
+
+                                                <div class="d-flex justify-content-between pt-4 align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/owners/1.jpg" alt="Owner Image" class="rounded-circle me-3">
+                                                        <p class="fw-semibold fs-5">Jenny Wilson</p>
+                                                    </div>
+                                                    <ul class="d-flex gap-3"> 
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-share-nodes"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-heart fw-normal"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-plus fw-normal"></i></a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="box featured-box bg-white rounded-2 overflow-hidden position-relative cursor-pointer ease-tran">
+                                            <span class="feature-bagde bg-b py-2 px-4 text-fff fw-semibold position-absolute top-0 end-0">Sale</span>
+                                            <img src="./assets/img/property-img/featured-2.jpg" alt="Featured Image" class="full-width">
+
+                                            <div class="featured-box-content p-4">
+                                                <h5 class="text-uppercase mb-2">90 RIVER BIRCH DRIVE</h5>
+                                                <p class="brand-color-b mb-2 fw-semibold fs-5">$2,175,000</p>
+                                                <ul class="d-flex brand-color-para-2 gap-4 fw-semibold align-items-center border-bottom pb-3">
+                                                    <li><img src="./assets/img/icon/hospital-bed.svg" alt="Featured Icon" class="me-1"> 5</li>
+                                                    <li><img src="./assets/img/icon/bathtub.svg" alt="Featured Icon" class="me-1"> <span class="op-6">6</span></li>
+                                                    <li><img src="./assets/img/icon/arrow-out.svg" alt="Featured Icon" class="me-1"> 7,097 sqft</li>
+                                                </ul>
+
+                                                <div class="d-flex justify-content-between pt-4 align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/owners/2.jpg" alt="Owner Image" class="rounded-circle me-3">
+                                                        <p class="fw-semibold fs-5">Henry, Arthur</p>
+                                                    </div>
+                                                    <ul class="d-flex gap-3"> 
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-share-nodes"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-heart fw-normal"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-plus fw-normal"></i></a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="box featured-box bg-white rounded-2 overflow-hidden position-relative cursor-pointer ease-tran">
+                                            <span class="feature-bagde bg-b py-2 px-4 text-fff fw-semibold position-absolute top-0 end-0">Rent</span>
+                                            <img src="./assets/img/property-img/featured-3.jpg" alt="Featured Image" class="full-width">
+
+                                            <div class="featured-box-content p-4">
+                                                <h5 class="text-uppercase mb-2">548 INNSBRUCK AVENUE</h5>
+                                                <p class="brand-color-b mb-2 fw-semibold fs-5">$3,500,000</p>
+                                                <ul class="d-flex brand-color-para-2 gap-4 fw-semibold align-items-center border-bottom pb-3">
+                                                    <li><img src="./assets/img/icon/hospital-bed.svg" alt="Featured Icon" class="me-1"> 5</li>
+                                                    <li><img src="./assets/img/icon/bathtub.svg" alt="Featured Icon" class="me-1"> <span class="op-6">6</span></li>
+                                                    <li><img src="./assets/img/icon/arrow-out.svg" alt="Featured Icon" class="me-1">6,669 sqft</li>
+                                                </ul>
+
+                                                <div class="d-flex justify-content-between pt-4 align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/owners/3.jpg" alt="Owner Image" class="rounded-circle me-3">
+                                                        <p class="fw-semibold fs-5">Flores, Juanita</p>
+                                                    </div>
+                                                    <ul class="d-flex gap-3"> 
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-share-nodes"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-heart fw-normal"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-plus fw-normal"></i></a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="box featured-box bg-white rounded-2 overflow-hidden position-relative cursor-pointer ease-tran">
+                                            <span class="feature-bagde bg-b py-2 px-4 text-fff fw-semibold position-absolute top-0 end-0">Sale</span>
+                                            <img src="./assets/img/property-img/featured-4.jpg" alt="Featured Image" class="full-width">
+
+                                            <div class="featured-box-content p-4">
+                                                <h5 class="text-uppercase mb-2">1208 RILEY PRESERVE COURT</h5>
+                                                <p class="brand-color-b mb-2 fw-semibold fs-5">$3,783,697</p>
+                                                <ul class="d-flex brand-color-para-2 gap-4 fw-semibold align-items-center border-bottom pb-3">
+                                                    <li><img src="./assets/img/icon/hospital-bed.svg" alt="Featured Icon" class="me-1"> 6</li>
+                                                    <li><img src="./assets/img/icon/bathtub.svg" alt="Featured Icon" class="me-1"> <span class="op-6">8</span></li>
+                                                    <li><img src="./assets/img/icon/arrow-out.svg" alt="Featured Icon" class="me-1"> 7,096 sqft</li>
+                                                </ul>
+
+                                                <div class="d-flex justify-content-between pt-4 align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/owners/4.jpg" alt="Owner Image" class="rounded-circle me-3">
+                                                        <p class="fw-semibold fs-5">Flores, Juanita</p>
+                                                    </div>
+                                                    <ul class="d-flex gap-3"> 
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-share-nodes"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-heart fw-normal"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-plus fw-normal"></i></a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="box featured-box bg-white rounded-2 overflow-hidden position-relative cursor-pointer ease-tran">
+                                            <span class="feature-bagde bg-b py-2 px-4 text-fff fw-semibold position-absolute top-0 end-0">Rent</span>
+                                            <img src="./assets/img/property-img/featured-5.jpg" alt="Featured Image" class="full-width">
+
+                                            <div class="featured-box-content p-4">
+                                                <h5 class="text-uppercase mb-2">10509 BEACH MILL ROAD</h5>
+                                                <p class="brand-color-b mb-2 fw-semibold fs-5">$7,750,000</p>
+                                                <ul class="d-flex brand-color-para-2 gap-4 fw-semibold align-items-center border-bottom pb-3">
+                                                    <li><img src="./assets/img/icon/hospital-bed.svg" alt="Featured Icon" class="me-1"> 6\4</li>
+                                                    <li><img src="./assets/img/icon/bathtub.svg" alt="Featured Icon" class="me-1"> <span class="op-6">5</span></li>
+                                                    <li><img src="./assets/img/icon/arrow-out.svg" alt="Featured Icon" class="me-1"> 4,600 sqft</li>
+                                                </ul>
+
+                                                <div class="d-flex justify-content-between pt-4 align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/owners/2.jpg" alt="Owner Image" class="rounded-circle me-3">
+                                                        <p class="fw-semibold fs-5">Henry, Arthur</p>
+                                                    </div>
+                                                    <ul class="d-flex gap-3"> 
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-share-nodes"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-heart fw-normal"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-plus fw-normal"></i></a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="box featured-box bg-white rounded-2 overflow-hidden position-relative cursor-pointer ease-tran">
+                                            <span class="feature-bagde bg-b py-2 px-4 text-fff fw-semibold position-absolute top-0 end-0">Sale</span>
+                                            <img src="./assets/img/property-img/featured-6.jpg" alt="Featured Image" class="full-width">
+
+                                            <div class="featured-box-content p-4">
+                                                <h5 class="text-uppercase mb-2">800 LEIGH MILL ROAD</h5>
+                                                <p class="brand-color-b mb-2 fw-semibold fs-5">$2,550,000</p>
+                                                <ul class="d-flex brand-color-para-2 gap-4 fw-semibold align-items-center border-bottom pb-3">
+                                                    <li><img src="./assets/img/icon/hospital-bed.svg" alt="Featured Icon" class="me-1"> 6</li>
+                                                    <li><img src="./assets/img/icon/bathtub.svg" alt="Featured Icon" class="me-1"> <span class="op-6">6</span></li>
+                                                    <li><img src="./assets/img/icon/arrow-out.svg" alt="Featured Icon" class="me-1"> 5,296 sqft</li>
+                                                </ul>
+
+                                                <div class="d-flex justify-content-between pt-4 align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/owners/5.jpg" alt="Owner Image" class="rounded-circle me-3">
+                                                        <p class="fw-semibold fs-5">Black, Marvin</p>
+                                                    </div>
+                                                    <ul class="d-flex gap-3"> 
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-share-nodes"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-heart fw-normal"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-plus fw-normal"></i></a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-office" role="tabpanel" aria-labelledby="pills-office-tab" tabindex="0">
+                                <div class="row">
+
+                                    <div class="col-lg-4">
+                                        <div class="box featured-box bg-white rounded-2 overflow-hidden position-relative cursor-pointer ease-tran">
+                                            <span class="feature-bagde bg-b py-2 px-4 text-fff fw-semibold position-absolute top-0 end-0">Rent</span>
+                                            <img src="./assets/img/property-img/featured-1.jpg" alt="Featured Image" class="full-width">
+    
+                                            <div class="featured-box-content p-4">
+                                                <h5 class="text-uppercase mb-2">10921 SHALLOW CREEK DRIVE</h5>
+                                                <p class="brand-color-b mb-2 fw-semibold fs-5">$ 42,590</p>
+                                                <ul class="d-flex brand-color-para-2 gap-4 fw-semibold align-items-center border-bottom pb-3">
+                                                    <li><img src="./assets/img/icon/hospital-bed.svg" alt="Featured Icon" class="me-1"> 6</li>
+                                                    <li><img src="./assets/img/icon/bathtub.svg" alt="Featured Icon" class="me-1"> <span class="op-6">6</span></li>
+                                                    <li><img src="./assets/img/icon/arrow-out.svg" alt="Featured Icon" class="me-1"> 6,480 sqft</li>
+                                                </ul>
+    
+                                                <div class="d-flex justify-content-between pt-4 align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/owners/1.jpg" alt="Owner Image" class="rounded-circle me-3">
+                                                        <p class="fw-semibold fs-5">Jenny Wilson</p>
+                                                    </div>
+                                                    <ul class="d-flex gap-3"> 
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-share-nodes"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-heart fw-normal"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-plus fw-normal"></i></a></li>
+                                                    </ul>
+                                                </div>
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-4">
+                                        <div class="box featured-box bg-white rounded-2 overflow-hidden position-relative cursor-pointer ease-tran">
+                                            <span class="feature-bagde bg-b py-2 px-4 text-fff fw-semibold position-absolute top-0 end-0">Rent</span>
+                                            <img src="./assets/img/property-img/featured-3.jpg" alt="Featured Image" class="full-width">
+    
+                                            <div class="featured-box-content p-4">
+                                                <h5 class="text-uppercase mb-2">548 INNSBRUCK AVENUE</h5>
+                                                <p class="brand-color-b mb-2 fw-semibold fs-5">$3,500,000</p>
+                                                <ul class="d-flex brand-color-para-2 gap-4 fw-semibold align-items-center border-bottom pb-3">
+                                                    <li><img src="./assets/img/icon/hospital-bed.svg" alt="Featured Icon" class="me-1"> 5</li>
+                                                    <li><img src="./assets/img/icon/bathtub.svg" alt="Featured Icon" class="me-1"> <span class="op-6">6</span></li>
+                                                    <li><img src="./assets/img/icon/arrow-out.svg" alt="Featured Icon" class="me-1">6,669 sqft</li>
+                                                </ul>
+    
+                                                <div class="d-flex justify-content-between pt-4 align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/owners/3.jpg" alt="Owner Image" class="rounded-circle me-3">
+                                                        <p class="fw-semibold fs-5">Flores, Juanita</p>
+                                                    </div>
+                                                    <ul class="d-flex gap-3"> 
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-share-nodes"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-heart fw-normal"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-plus fw-normal"></i></a></li>
+                                                    </ul>
+                                                </div>
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-4">
+                                        <div class="box featured-box bg-white rounded-2 overflow-hidden position-relative cursor-pointer ease-tran">
+                                            <span class="feature-bagde bg-b py-2 px-4 text-fff fw-semibold position-absolute top-0 end-0">Sale</span>
+                                            <img src="./assets/img/property-img/featured-4.jpg" alt="Featured Image" class="full-width">
+    
+                                            <div class="featured-box-content p-4">
+                                                <h5 class="text-uppercase mb-2">1208 RILEY PRESERVE COURT</h5>
+                                                <p class="brand-color-b mb-2 fw-semibold fs-5">$3,783,697</p>
+                                                <ul class="d-flex brand-color-para-2 gap-4 fw-semibold align-items-center border-bottom pb-3">
+                                                    <li><img src="./assets/img/icon/hospital-bed.svg" alt="Featured Icon" class="me-1"> 6</li>
+                                                    <li><img src="./assets/img/icon/bathtub.svg" alt="Featured Icon" class="me-1"> <span class="op-6">8</span></li>
+                                                    <li><img src="./assets/img/icon/arrow-out.svg" alt="Featured Icon" class="me-1"> 7,096 sqft</li>
+                                                </ul>
+    
+                                                <div class="d-flex justify-content-between pt-4 align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/owners/4.jpg" alt="Owner Image" class="rounded-circle me-3">
+                                                        <p class="fw-semibold fs-5">Flores, Juanita</p>
+                                                    </div>
+                                                    <ul class="d-flex gap-3"> 
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-share-nodes"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-heart fw-normal"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-plus fw-normal"></i></a></li>
+                                                    </ul>
+                                                </div>
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-smart_home" role="tabpanel" aria-labelledby="pills-smart_home-tab" tabindex="0">
+                                <div class="row">
+
+                                    <div class="col-lg-4">
+                                        <div class="box featured-box bg-white rounded-2 overflow-hidden position-relative cursor-pointer ease-tran">
+                                            <span class="feature-bagde bg-b py-2 px-4 text-fff fw-semibold position-absolute top-0 end-0">Rent</span>
+                                            <img src="./assets/img/property-img/featured-1.jpg" alt="Featured Image" class="full-width">
+
+                                            <div class="featured-box-content p-4">
+                                                <h5 class="text-uppercase mb-2">10921 SHALLOW CREEK DRIVE</h5>
+                                                <p class="brand-color-b mb-2 fw-semibold fs-5">$ 42,590</p>
+                                                <ul class="d-flex brand-color-para-2 gap-4 fw-semibold align-items-center border-bottom pb-3">
+                                                    <li><img src="./assets/img/icon/hospital-bed.svg" alt="Featured Icon" class="me-1"> 6</li>
+                                                    <li><img src="./assets/img/icon/bathtub.svg" alt="Featured Icon" class="me-1"> <span class="op-6">6</span></li>
+                                                    <li><img src="./assets/img/icon/arrow-out.svg" alt="Featured Icon" class="me-1"> 6,480 sqft</li>
+                                                </ul>
+
+                                                <div class="d-flex justify-content-between pt-4 align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/owners/1.jpg" alt="Owner Image" class="rounded-circle me-3">
+                                                        <p class="fw-semibold fs-5">Jenny Wilson</p>
+                                                    </div>
+                                                    <ul class="d-flex gap-3"> 
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-share-nodes"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-heart fw-normal"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-plus fw-normal"></i></a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="box featured-box bg-white rounded-2 overflow-hidden position-relative cursor-pointer ease-tran">
+                                            <span class="feature-bagde bg-b py-2 px-4 text-fff fw-semibold position-absolute top-0 end-0">Sale</span>
+                                            <img src="./assets/img/property-img/featured-2.jpg" alt="Featured Image" class="full-width">
+
+                                            <div class="featured-box-content p-4">
+                                                <h5 class="text-uppercase mb-2">90 RIVER BIRCH DRIVE</h5>
+                                                <p class="brand-color-b mb-2 fw-semibold fs-5">$2,175,000</p>
+                                                <ul class="d-flex brand-color-para-2 gap-4 fw-semibold align-items-center border-bottom pb-3">
+                                                    <li><img src="./assets/img/icon/hospital-bed.svg" alt="Featured Icon" class="me-1"> 5</li>
+                                                    <li><img src="./assets/img/icon/bathtub.svg" alt="Featured Icon" class="me-1"> <span class="op-6">6</span></li>
+                                                    <li><img src="./assets/img/icon/arrow-out.svg" alt="Featured Icon" class="me-1"> 7,097 sqft</li>
+                                                </ul>
+
+                                                <div class="d-flex justify-content-between pt-4 align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/owners/2.jpg" alt="Owner Image" class="rounded-circle me-3">
+                                                        <p class="fw-semibold fs-5">Henry, Arthur</p>
+                                                    </div>
+                                                    <ul class="d-flex gap-3"> 
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-share-nodes"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-heart fw-normal"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-plus fw-normal"></i></a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="box featured-box bg-white rounded-2 overflow-hidden position-relative cursor-pointer ease-tran">
+                                            <span class="feature-bagde bg-b py-2 px-4 text-fff fw-semibold position-absolute top-0 end-0">Rent</span>
+                                            <img src="./assets/img/property-img/featured-3.jpg" alt="Featured Image" class="full-width">
+
+                                            <div class="featured-box-content p-4">
+                                                <h5 class="text-uppercase mb-2">548 INNSBRUCK AVENUE</h5>
+                                                <p class="brand-color-b mb-2 fw-semibold fs-5">$3,500,000</p>
+                                                <ul class="d-flex brand-color-para-2 gap-4 fw-semibold align-items-center border-bottom pb-3">
+                                                    <li><img src="./assets/img/icon/hospital-bed.svg" alt="Featured Icon" class="me-1"> 5</li>
+                                                    <li><img src="./assets/img/icon/bathtub.svg" alt="Featured Icon" class="me-1"> <span class="op-6">6</span></li>
+                                                    <li><img src="./assets/img/icon/arrow-out.svg" alt="Featured Icon" class="me-1">6,669 sqft</li>
+                                                </ul>
+
+                                                <div class="d-flex justify-content-between pt-4 align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/owners/3.jpg" alt="Owner Image" class="rounded-circle me-3">
+                                                        <p class="fw-semibold fs-5">Flores, Juanita</p>
+                                                    </div>
+                                                    <ul class="d-flex gap-3"> 
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-share-nodes"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-heart fw-normal"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-plus fw-normal"></i></a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="box featured-box bg-white rounded-2 overflow-hidden position-relative cursor-pointer ease-tran">
+                                            <span class="feature-bagde bg-b py-2 px-4 text-fff fw-semibold position-absolute top-0 end-0">Sale</span>
+                                            <img src="./assets/img/property-img/featured-4.jpg" alt="Featured Image" class="full-width">
+
+                                            <div class="featured-box-content p-4">
+                                                <h5 class="text-uppercase mb-2">1208 RILEY PRESERVE COURT</h5>
+                                                <p class="brand-color-b mb-2 fw-semibold fs-5">$3,783,697</p>
+                                                <ul class="d-flex brand-color-para-2 gap-4 fw-semibold align-items-center border-bottom pb-3">
+                                                    <li><img src="./assets/img/icon/hospital-bed.svg" alt="Featured Icon" class="me-1"> 6</li>
+                                                    <li><img src="./assets/img/icon/bathtub.svg" alt="Featured Icon" class="me-1"> <span class="op-6">8</span></li>
+                                                    <li><img src="./assets/img/icon/arrow-out.svg" alt="Featured Icon" class="me-1"> 7,096 sqft</li>
+                                                </ul>
+
+                                                <div class="d-flex justify-content-between pt-4 align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/owners/4.jpg" alt="Owner Image" class="rounded-circle me-3">
+                                                        <p class="fw-semibold fs-5">Flores, Juanita</p>
+                                                    </div>
+                                                    <ul class="d-flex gap-3"> 
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-share-nodes"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-heart fw-normal"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-plus fw-normal"></i></a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="box featured-box bg-white rounded-2 overflow-hidden position-relative cursor-pointer ease-tran">
+                                            <span class="feature-bagde bg-b py-2 px-4 text-fff fw-semibold position-absolute top-0 end-0">Rent</span>
+                                            <img src="./assets/img/property-img/featured-5.jpg" alt="Featured Image" class="full-width">
+
+                                            <div class="featured-box-content p-4">
+                                                <h5 class="text-uppercase mb-2">10509 BEACH MILL ROAD</h5>
+                                                <p class="brand-color-b mb-2 fw-semibold fs-5">$7,750,000</p>
+                                                <ul class="d-flex brand-color-para-2 gap-4 fw-semibold align-items-center border-bottom pb-3">
+                                                    <li><img src="./assets/img/icon/hospital-bed.svg" alt="Featured Icon" class="me-1"> 6\4</li>
+                                                    <li><img src="./assets/img/icon/bathtub.svg" alt="Featured Icon" class="me-1"> <span class="op-6">5</span></li>
+                                                    <li><img src="./assets/img/icon/arrow-out.svg" alt="Featured Icon" class="me-1"> 4,600 sqft</li>
+                                                </ul>
+
+                                                <div class="d-flex justify-content-between pt-4 align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/owners/2.jpg" alt="Owner Image" class="rounded-circle me-3">
+                                                        <p class="fw-semibold fs-5">Henry, Arthur</p>
+                                                    </div>
+                                                    <ul class="d-flex gap-3"> 
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-share-nodes"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-heart fw-normal"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-plus fw-normal"></i></a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="box featured-box bg-white rounded-2 overflow-hidden position-relative cursor-pointer ease-tran">
+                                            <span class="feature-bagde bg-b py-2 px-4 text-fff fw-semibold position-absolute top-0 end-0">Sale</span>
+                                            <img src="./assets/img/property-img/featured-6.jpg" alt="Featured Image" class="full-width">
+
+                                            <div class="featured-box-content p-4">
+                                                <h5 class="text-uppercase mb-2">800 LEIGH MILL ROAD</h5>
+                                                <p class="brand-color-b mb-2 fw-semibold fs-5">$2,550,000</p>
+                                                <ul class="d-flex brand-color-para-2 gap-4 fw-semibold align-items-center border-bottom pb-3">
+                                                    <li><img src="./assets/img/icon/hospital-bed.svg" alt="Featured Icon" class="me-1"> 6</li>
+                                                    <li><img src="./assets/img/icon/bathtub.svg" alt="Featured Icon" class="me-1"> <span class="op-6">6</span></li>
+                                                    <li><img src="./assets/img/icon/arrow-out.svg" alt="Featured Icon" class="me-1"> 5,296 sqft</li>
+                                                </ul>
+
+                                                <div class="d-flex justify-content-between pt-4 align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/owners/5.jpg" alt="Owner Image" class="rounded-circle me-3">
+                                                        <p class="fw-semibold fs-5">Black, Marvin</p>
+                                                    </div>
+                                                    <ul class="d-flex gap-3"> 
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-share-nodes"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-heart fw-normal"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-plus fw-normal"></i></a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-condominium" role="tabpanel" aria-labelledby="pills-condominium-tab" tabindex="0">
+                                <div class="row justify-content-center">
+
+                                    <div class="col-lg-4">
+                                        <div class="box featured-box bg-white rounded-2 overflow-hidden position-relative cursor-pointer ease-tran">
+                                            <span class="feature-bagde bg-b py-2 px-4 text-fff fw-semibold position-absolute top-0 end-0">Sale</span>
+                                            <img src="./assets/img/property-img/featured-6.jpg" alt="Featured Image" class="full-width">
+
+                                            <div class="featured-box-content p-4">
+                                                <h5 class="text-uppercase mb-2">800 LEIGH MILL ROAD</h5>
+                                                <p class="brand-color-b mb-2 fw-semibold fs-5">$2,550,000</p>
+                                                <ul class="d-flex brand-color-para-2 gap-4 fw-semibold align-items-center border-bottom pb-3">
+                                                    <li><img src="./assets/img/icon/hospital-bed.svg" alt="Featured Icon" class="me-1"> 6</li>
+                                                    <li><img src="./assets/img/icon/bathtub.svg" alt="Featured Icon" class="me-1"> <span class="op-6">6</span></li>
+                                                    <li><img src="./assets/img/icon/arrow-out.svg" alt="Featured Icon" class="me-1"> 5,296 sqft</li>
+                                                </ul>
+
+                                                <div class="d-flex justify-content-between pt-4 align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./assets/img/owners/5.jpg" alt="Owner Image" class="rounded-circle me-3">
+                                                        <p class="fw-semibold fs-5">Black, Marvin</p>
+                                                    </div>
+                                                    <ul class="d-flex gap-3"> 
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-share-nodes"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-heart fw-normal"></i></a></li>
+                                                        <li><a class="brand-color-a bg-c p-2 rounded hover-bg-a hover-brand-color-c ease-tran" href="#"><i class="fa fa-plus fw-normal"></i></a></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                          </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================
+    Tesimonial Property Section
+    ============================ -->
+    <section class="tesimonial-section section-padding bg-white">
+        <div class="container">
+            <div class="section-header mb-80">
+                <h3 class="section-title mb-1">People Love Living <br> with Realton</h3>
+            </div>
+            <div class="tesimonial-slider">
+                <div class="box pe-5">
+                    <div class="testimonial-star mb-4">
+                        <i class="fa fa-star brand-color-b"></i>
+                        <i class="fa fa-star brand-color-b"></i>
+                        <i class="fa fa-star brand-color-b"></i>
+                        <i class="fa fa-star brand-color-b"></i>
+                        <i class="fa fa-star brand-color-b"></i>
+                    </div>
+                    <div class="testimonial-content mb-4">
+                        <span class="fs-5">“You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.”</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <img src="./assets/img/owners/t-1.jpg" alt="Owner Image" class="rounded-circle me-3">
+                        <div>
+                            <p class="fw-semibold">Jenny Wilson</p>
+                            <span class="op-6">Founder</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box pe-5">
+                    <div class="testimonial-star mb-4">
+                        <i class="fa fa-star brand-color-b"></i>
+                        <i class="fa fa-star brand-color-b"></i>
+                        <i class="fa fa-star brand-color-b"></i>
+                        <i class="fa fa-star brand-color-b"></i>
+                        <i class="fa fa-star brand-color-b"></i>
+                    </div>
+                    <div class="testimonial-content mb-4">
+                        <span class="fs-5">“Outstanding service! They understood, guided seamlessly, and exceeded expectations in our real estate journey.”</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <img src="./assets/img/owners/t-2.jpg" alt="Owner Image" class="rounded-circle me-3">
+                        <div>
+                            <p class="fw-semibold">Esther Howard</p>
+                            <span class="op-6">Founder</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box pe-5">
+                    <div class="testimonial-star mb-4">
+                        <i class="fa fa-star brand-color-b"></i>
+                        <i class="fa fa-star brand-color-b"></i>
+                        <i class="fa fa-star brand-color-b"></i>
+                        <i class="fa fa-star brand-color-b"></i>
+                        <i class="fa fa-star brand-color-b"></i>
+                    </div>
+                    <div class="testimonial-content mb-4">
+                        <span class="fs-5">“You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.”</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <img src="./assets/img/owners/t-3.jpg" alt="Owner Image" class="rounded-circle me-3">
+                        <div>
+                            <p class="fw-semibold">Leslie Alexander</p>
+                            <span class="op-6">Founder</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box pe-5">
+                    <div class="testimonial-star mb-4">
+                        <i class="fa fa-star brand-color-b"></i>
+                        <i class="fa fa-star brand-color-b"></i>
+                        <i class="fa fa-star brand-color-b"></i>
+                        <i class="fa fa-star brand-color-b"></i>
+                        <i class="fa fa-star brand-color-b"></i>
+                    </div>
+                    <div class="testimonial-content mb-4">
+                        <span class="fs-5">“You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.”</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <img src="./assets/img/owners/t-1.jpg" alt="Owner Image" class="rounded-circle me-3">
+                        <div>
+                            <p class="fw-semibold">Jenny Wilson</p>
+                            <span class="op-6">Founder</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box pe-5">
+                    <div class="testimonial-star mb-4">
+                        <i class="fa fa-star brand-color-b"></i>
+                        <i class="fa fa-star brand-color-b"></i>
+                        <i class="fa fa-star brand-color-b"></i>
+                        <i class="fa fa-star brand-color-b"></i>
+                        <i class="fa fa-star brand-color-b"></i>
+                    </div>
+                    <div class="testimonial-content mb-4">
+                        <span class="fs-5">“Outstanding service! They understood, guided seamlessly, and exceeded expectations in our real estate journey.”</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <img src="./assets/img/owners/t-2.jpg" alt="Owner Image" class="rounded-circle me-3">
+                        <div>
+                            <p class="fw-semibold">Esther Howard</p>
+                            <span class="op-6">Founder</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box pe-5">
+                    <div class="testimonial-star mb-4">
+                        <i class="fa fa-star brand-color-b"></i>
+                        <i class="fa fa-star brand-color-b"></i>
+                        <i class="fa fa-star brand-color-b"></i>
+                        <i class="fa fa-star brand-color-b"></i>
+                        <i class="fa fa-star brand-color-b"></i>
+                    </div>
+                    <div class="testimonial-content mb-4">
+                        <span class="fs-5">“You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.”</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <img src="./assets/img/owners/t-3.jpg" alt="Owner Image" class="rounded-circle me-3">
+                        <div>
+                            <p class="fw-semibold">Leslie Alexander</p>
+                            <span class="op-6">Founder</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================
+    Contact US Section
+    ============================ -->
+    <section class="section-padding contact-section pb-0 position-relative">
+        <img src="./assets/img/contact-image.png" class="position-absolute bottom-0 start-50" alt="Contact Image" style="transform: translateX(-1px);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contatus-form me-5 pb-120">
+                        <div class="card border-0">
+                            <div class="card-body p-4">
+                                <h3 class="mb-4 fw-semibold">Have questions? Get in touch!</h3>
+                                <form class="row g-4">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label brand-color-para-2">Your Name</label>
+                                        <input type="email" class="form-control" id="name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label brand-color-para-2">Your Email</label>
+                                        <input type="password" class="form-control" id="email">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label brand-color-para-2">Your Phone No.</label>
+                                        <input type="email" class="form-control" id="phone">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="address" class="form-label brand-color-para-2">Your Address</label>
+                                        <input type="password" class="form-control" id="address">
+                                    </div>
+
+
+                                    <div class="col-12">
+                                      <label for="message" class="form-label brand-color-para-2">Your Message</label>
+                                      <textarea type="text" class="form-control" id="message" rows="5"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                      <button type="submit" class="button bg-a hover-bg-b rounded-2 brand-color-c ">Send message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 bg-a">
+                    <div class="section-header mb-80 ps-5">
+                        <h3 class="fs-1 fw-bold mb-1 text-fff">We’d Love To Hear <br> From You.</h3>
+                        <p class=" brand-color-c">We are here to answer any question you may have. As a <br> partner of corporates, realton has more than 9,000 offices of <br> all sizes and all potential of session.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================
+    Blog Section
+    ============================ -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-12">
+                    <div class="section-header text-center mb-80">
+                        <h3 class="section-title mb-2">Blogs</h3>
+                        <p>A great plateform to buy, sell and rent <br> your properties without any agent or commisions.</p>
+                    </div>
+                </div>
+                
+
+                <div class="col-lg-4">
+                    <div class="box blog-box bg-white overflow-hidden position-relative cursor-pointer ease-tran">
+                        <img src="./assets/img/blog-1.jpg" alt="Featured Image" class="rounded-2 mb-4 full-width">
+
+                        <div class="featured-box-content">
+                            <div class="mb-2">
+                                <span class="brand-color-para me-4"><i class="fa fa-calendar"></i> August 20, 2022</span>
+                                <span class="brand-color-para"><i class="fa fa-clock"></i> 9 min read</span>
+                            </div>
+                            <h5 class="text-capitalize fw-semibold mb-2">Skills That You Can Learn In The Real Estate Market...</h5>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box blog-box bg-white overflow-hidden position-relative cursor-pointer ease-tran">
+                        <img src="./assets/img/blog-2.jpg" alt="Featured Image" class="rounded-2 mb-4 full-width">
+
+                        <div class="featured-box-content">
+                            <div class="mb-2">
+                                <span class="brand-color-para me-4"><i class="fa fa-calendar"></i> August 20, 2022</span>
+                                <span class="brand-color-para"><i class="fa fa-clock"></i> 9 min read</span>
+                            </div>
+                            <h5 class="text-capitalize fw-semibold mb-2">Prices And Sales Trending Down In Two Different...</h5>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box blog-box bg-white overflow-hidden position-relative cursor-pointer ease-tran">
+                        <img src="./assets/img/blog-3.jpg" alt="Featured Image" class="rounded-2 mb-4 full-width">
+
+                        <div class="featured-box-content">
+                            <div class="mb-2">
+                                <span class="brand-color-para me-4"><i class="fa fa-calendar"></i> August 20, 2022</span>
+                                <span class="brand-color-para"><i class="fa fa-clock"></i> 9 min read</span>
+                            </div>
+                            <h5 class="text-capitalize fw-semibold mb-2">Building Gains Into Housing Stocks And How To Trade The Sector...</h5>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================
+    Contact Section
+    ============================ -->
+    <section class="joinus-section position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="joinus-container bg-b border-top-both py-80 position-relative text-center overflow-hidden">
+                        <img src="./assets/img/joinus-vector.png" alt="Joinus Vactor" class="position-absolute top-0 start-0 joinus-absolute-image">
+                        <h3 class="text-fff mb-1 fw-bold">Wanna join the Allegro?</h3>
+                        <p class="text-fff op-8 mb-4 font-20">We help you make the dream of new house a reality.</p>
+                        <button type="submit" class="button bg-fff hover-bg-a rounded-2 brand-color-a hover-text-fff">Explore Properties</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-d footer">
+        <div class="container">
+            <div class="footer-top mb-60">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="footer-box">
+                            <img src="./assets/img/logo-footer.png" alt="Footer Logo" width="150px"> 
+                            <p class="text-fff op-8 my-3">Allegro helps build trust and <br> connections between users <br> and agents.</p>
+                            <ul class="d-flex gap-4">
+                                <li><a href="#" class="text-fff hover-brand-color-a ease-tran"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="#" class="text-fff hover-brand-color-a ease-tran"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" class="text-fff hover-brand-color-a ease-tran"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#" class="text-fff hover-brand-color-a ease-tran"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="footer-box">
+                            <p class="fs-5 fw-semibold text-fff">Pages</p>
+                            <ul class="gap-3 row mt-4">
+                                <li><a href="#" class="text-fff op-8 hover-brand-color-a hover-op-10 ease-tran ">About Us</a></li>
+                                <li><a href="#" class="text-fff op-8 hover-brand-color-a hover-op-10 ease-tran ">Our Projects</a></li>
+                                <li><a href="#" class="text-fff op-8 hover-brand-color-a hover-op-10 ease-tran ">Our Team</a></li>
+                                <li><a href="#" class="text-fff op-8 hover-brand-color-a hover-op-10 ease-tran ">Contact Us</a></li>
+                                <li><a href="#" class="text-fff op-8 hover-brand-color-a hover-op-10 ease-tran ">Services</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="footer-box">
+                            <p class="fs-5 fw-semibold text-fff">Services</p>
+                            <ul class="gap-3 row mt-4">
+                                <li><a href="#" class="text-fff op-8 hover-brand-color-a hover-op-10 ease-tran ">Kitchan</a></li>
+                                <li><a href="#" class="text-fff op-8 hover-brand-color-a hover-op-10 ease-tran ">Living Area</a></li>
+                                <li><a href="#" class="text-fff op-8 hover-brand-color-a hover-op-10 ease-tran ">Bathroom</a></li>
+                                <li><a href="#" class="text-fff op-8 hover-brand-color-a hover-op-10 ease-tran ">Dinning Hall</a></li>
+                                <li><a href="#" class="text-fff op-8 hover-brand-color-a hover-op-10 ease-tran ">Bedroom</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer-box">
+                            <p class="fs-5 fw-semibold text-fff">Contact</p>
+                            <ul class="gap-3 row mt-4">
+                                <li><a href="#" class="text-fff op-8 hover-brand-color-a hover-op-10 ease-tran ">55 East Birchwood Ave. Brooklyn, <br> New York 11201</a></li>
+                                <li><a href="#" class="text-fff op-8 hover-brand-color-a hover-op-10 ease-tran ">contact@allegro.com</a></li>
+                                <li><a href="#" class="text-fff op-8 hover-brand-color-a hover-op-10 ease-tran ">(123) 456 - 7890</a></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-fff op-8 text-center py-4 bt">
+           Copyright © 2023, All Rights Reserved by  <a href="#" class="brand-color-a hover-brand-color-b">Arham Techpro</a>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="./assets/lib/slick/slick/slick.js" crossorigin="anonymous"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            $('.latest-property-slider').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                arrows:true
+            });
+            $('.tesimonial-slider').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows:true
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
