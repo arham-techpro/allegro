@@ -293,10 +293,15 @@ BLog Section
     width: 100%;
     height: 100%;
 }
+.joinus-container{
+    z-index: 1;
+}
 .joinus-container h3{
     font-size: 44px;
 }
-
+.joinus-absolute-image{
+    z-index: -1;
+}
 
 
 /* ==============================
