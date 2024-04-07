@@ -313,7 +313,184 @@ Footer Section
 }
 
 
+
+.responsive-xs-show{
+    display: none;
+}
 /* ==============================
 Responsive CSS
 ============================== */
+@media screen and (max-width:992px){
+    .main-navbar .nav-link{
+        display: inline-block;
+    }
+    .main-navbar .navbar-nav{
+        text-align: center;
+        margin-top: 40px;
+    }
+    .main-navbar ul li:not(:last-child) {
+        padding-right: 0px;
+    }
+    .mobile-nav-button::before{
+        display: none;
+    }
+    .logo {
+        width: 120px;
+    }
+    .responsive-d-none{
+        display: none;
+    }
+    .responsive-flex-wrap{
+        flex-wrap: wrap;
+    }
+    .search-input-items{
+        width: 48%;
+        border-right: 0px !important;
+        padding-right: 0px !important;
+    }
+    .search-input-items select{
+        width: 100%;
+    }
+    .responsive-gap-y-3{
+        gap: 16px 0px;
+    }
+    .responsive-gap-3{
+        gap: 16px;
+    }
+    .responsive-gap-y-4{
+        gap: 24px 0px;
+    }
+    .responsive-gap-y-5{
+        gap: 32px 0px;
+    }
+    .banner h1 {
+        font-size: 44px;
+    }
+    .fs-2{
+        font-size: 24px !important;
+    }
+    .fs-5, .font-20{
+        font-size: 16px !important;
+    }
+    .responsive-space-between{
+        justify-content: space-between !important;
+    }
+    .responsive-content-center{
+        justify-content: center !important;
+    }
+    .search-result-container .box img {
+        width: 60px;
+    }
+    .search-result-container{
+        padding: 30px;
+        border-radius: 0px 0px 8px 8px;
+    }
+    .search-result-container .box {
+        margin: 0px !important;
+        padding: 20px !important;
+    }
+    .section-padding {
+        padding: 80px 0px;
+    }
+    .contact-section {
+        background: #8DBF41;
+    }
+    .section-title {
+        font-size: 38px;
+    }
+    .latest-property-section {
+        padding-bottom: 530px !important;
+    }
+    .slick-prev {
+        left: 72%;
+    }
+    .responsive-ps-0{
+        padding-left: 0px !important;
+    }
+    .responsive-pe-0{
+        padding-right: 0px !important;
+    }
+    .responsive-ms-0{
+        margin-left: 0px !important;
+    }
+    .responsive-me-0{
+        margin-right: 0px !important;
+    }
+    .responsive-pt-0{
+        padding-top: 0px !important;
+    }
+    .mt-80 {
+        margin-top: 40px;
+    }
+    .mb-80 {
+        margin-bottom: 40px;
+    }
+    .mb-5 {
+        margin-bottom: 1.4rem !important;
+    }
+    .featured-property-tab-buttons ul#pills-tab {
+        border: none !important;
+    }
+    .featured-button{
+        border: 1px solid !important;
+        border-radius: 8px !important;
+    }
+    .tesimonial-section .slick-prev, .tesimonial-section .slick-next {
+        top: -72px;
+    }
+    .flex-reverse{
+        flex-direction: column-reverse;
+    }
+    .footer-box .gap-3{
+        gap: 12px !important;
+        margin-top: 10px !important;
+    }
+    .joinus-container h3 {
+        font-size: 32px;
+    }
+    
+}
 
+
+@media screen and (max-width:768px){
+    .banner {
+        padding-top: 100px;
+    }
+    .search-result-container .box {
+        margin: 0px !important;
+        padding: 16px 10px !important;
+    }
+    .search-result-container .box img {
+        width: 45px;
+    }
+    .search-result-container .box span{
+        font-size: 14px;
+    }
+    .fs-2 {
+        font-size: 18px !important;
+    }    
+    .section-title {
+        font-size: 28px;
+    }
+
+    .slick-slide.slick-current.slick-active .property-box .property-box-des {
+        bottom: 0px;
+    }
+    .latest-property-section {
+        padding-bottom: 545px !important;
+    }
+    .tesimonial-section .slick-prev, .tesimonial-section .slick-next {
+        top: unset;
+        bottom: -20px;
+    }
+    .responsive-xs-d-none{
+        display: none;
+    }
+    .responsive-xs-show{
+        display: block;
+    }
+    .joinus-container h3 {
+        font-size: 24px;
+    }
+    
+}
