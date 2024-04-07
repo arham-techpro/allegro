@@ -323,6 +323,17 @@ Footer Section
 /* ==============================
 Responsive CSS
 ============================== */
+@media screen and (min-width:1600px){
+    .latest-property-section {
+        padding-bottom: 660px;
+    }
+    .slick-prev {
+        left: 72%;
+    }
+    .slick-next {
+        left: 75%;
+    }
+}
 @media screen and (max-width:992px){
     .main-navbar .nav-link{
         display: inline-block;
