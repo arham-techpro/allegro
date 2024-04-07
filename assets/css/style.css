@@ -465,11 +465,15 @@ Responsive CSS
     .joinus-container h3 {
         font-size: 32px;
     }
+    .responsive-gap-2{
+        gap: 10px;
+    }
     
 }
 
 
 @media screen and (max-width:768px){
+    
     .banner {
         padding-top: 100px;
     }
@@ -508,6 +512,10 @@ Responsive CSS
     }
     .joinus-container h3 {
         font-size: 24px;
+    }
+    .featured-button {
+        padding: 10px 16px;
+        font-size: 14px;
     }
     
 }
