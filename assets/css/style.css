@@ -202,6 +202,7 @@ Bannner Section
 }
 .search-input-items select{
     margin-left: -5px;
+    background: transparent;
 }
 .search-input-items select:focus{
     outline: 0;
