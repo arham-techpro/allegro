@@ -314,6 +314,9 @@ Footer Section
 
 
 
+.responsive-d-show{
+    display: none;
+}
 .responsive-xs-show{
     display: none;
 }
@@ -339,6 +342,9 @@ Responsive CSS
     }
     .responsive-d-none{
         display: none;
+    }
+    .responsive-d-show{
+        display: block
     }
     .responsive-flex-wrap{
         flex-wrap: wrap;
