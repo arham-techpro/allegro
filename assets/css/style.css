@@ -177,6 +177,7 @@ Bannner Section
 .banner{
     padding-top: 150px;
     z-index: 1;
+    background: #2a2522;
 }
 .banner::before{
     position: absolute;
